@@ -1,0 +1,38 @@
+.container {
+  
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.productCont {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 20px;
+  gap: 20px;
+}
+
+.videoCont {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.detailsDiv {
+  width: 100%;
+  height: fit-content;
+}
+
+.smallDetails {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .productCont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

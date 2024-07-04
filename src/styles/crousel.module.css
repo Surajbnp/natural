@@ -1,0 +1,26 @@
+/* styles.css */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: 60px;
+}
+
+.carouselImages {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselImages img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: fit-content;
+  }
+}
